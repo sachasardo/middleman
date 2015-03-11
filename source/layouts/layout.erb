@@ -1,0 +1,130 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="http://www.lewagon.org/assets/logo-f800df98aa2605c552400667353f47d2.png" />
+
+  <title>La péniche</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <!-- Banner -->
+  <div class="text-center">
+  <div id="banner">
+    <h1>Le Paris</h1>
+    <br>
+    <p>Venez naviguer à bord du Paris</p>
+    <p>La plus belle péniche parisienne</p>
+    <br>
+    <a href="#" class="btn btn-primary btn-lg">Localiser la péniche</a>
+  </div>
+  </div>
+
+  <div class="bg-blue text-padded">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/notredame.jpg", class="img-circle", alt="Tarif">
+            <h2>Les tarifs</h2>
+            <p>Pas cher pas cher</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/péniche_paris.jpg", class="img-circle", alt="After-work">
+            <h2>Les After-work</h2>
+            <p>Venez vous détendre à bord du Paris après votre travail</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/tour_eiffel.jpg" class="img-circle" alt="Itinéraire">
+            <h2>L'itinéraire</h2>
+            <p>Le Paris navigue sur la seine mais les itinéraires changent souvent et il réserve de nombreuses surprises à chaque voyage</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/tour_eiffel2.jpg", class="img-circle", alt="Carte">
+            <h2>La Carte</h2>
+            <p>Lien vers la carte du Paris</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <!-- Form -->
+
+  <div class="card text-center text-padded">
+    <h2>Contactez notre équipe</h2>
+    <p>Laissez vos coordonnées et nous vous rappelerons</p>
+    <form action="">
+      <input type='email' placeholder='alan@turing.org'>
+      <input type='submit' value='Apply' class='btn btn-primary'>
+
+    </form>
+  </div>
+  <!-- Map -->
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.854007,2.279627);
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+};
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
+
+  <!-- Footer -->
+
+  <div id='footer' class='text-padded'>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 ">
+          <ul class="list-inline">
+            <li><i class="fa fa-twitter"></i> <br></li>
+            <li><i class="fa fa-facebook"></i> <br></li>
+            <li><i class="fa fa-youtube"></i> <br></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 text-right ">
+          <p>Contactez l'équipe du Paris</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+/* -------------------------------------
+ * Utilities classes
+ * These are examples of utilities classes
+ * Feel free to change them and create your own
+ * ------------------------------------- */
+@import url("banner.css");
+@import url("footer.css");
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #141414;
+  margin-top: 0;
+}
+
+.bg-blue {
+  background-color: #22A7F0;
+  color: white;
+  font-weight: 300;
+}
+
+.text-padded {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.bg-blue h2 {
+  font-size: 20px;
+}
+
+.bg-blue p {
+  font-size: 14px;
+}
+
+.img-circle {
+  height: 200;
+  width: 250;
+}
