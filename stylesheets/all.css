@@ -9067,7 +9067,7 @@ body {
 
 /* line 1, /Users/sacha_sardo/code/middleman/source/stylesheets/pages/_home.css.scss */
 #banner {
-  background-image: url(../images/tour_eiffel2.jpg);
+  background-image: url(../sources/images/tour_eiffel2.jpg);
   background-size: cover;
   height: 750px;
   padding: 250px 30px;
