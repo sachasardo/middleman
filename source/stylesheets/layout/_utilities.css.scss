@@ -3,24 +3,58 @@
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
+.padded {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+.bg-red {
+  background: $red;
+  color: white;
+}
+.bg-blue {
+  background: $blue;
+  color: white;
+}
+.bg-yellow {
+  background: $yellow;
+  color: white;
+}
+.bg-orange {
+  background: $orange;
+  color: white;
+}
+.bg-green {
+  background: $green;
+  color: white;
+}
+.bg-purple {
+  background: $purple;
+  color: white;
+}
 @import url("banner.css");
 @import url("footer.css");
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   color: #141414;
   margin-top: 0;
 }
 
 .bg-blue {
-  background-color: #22A7F0;
+  background-color: #2871B0;
   color: white;
   font-weight: 300;
 }
+.bg-grey {
+  background-color: grey;
+}
+.bg-orange {
+  background-color: orange;
+}
 
 .text-padded {
-  padding-top: 6em;
-  padding-bottom: 6em;
+  padding-top: 2em;
+  padding-bottom: 3em;
 }
 
 .bg-blue h2 {
@@ -35,3 +69,28 @@ body {
   height: 200;
   width: 250;
 }
+#navbar {
+  background-color: transparent;
+  top: 0px;
+  bottom: 3px;
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  text-align: right;
+}
+#navbar li {
+  padding: 10px;
+}
+#chef {
+  padding: 30px;
+}
+#footer {
+
+}
+.bg-blue strong {
+  color: orange;
+}
+#center {
+  text-align: center;
+}
+

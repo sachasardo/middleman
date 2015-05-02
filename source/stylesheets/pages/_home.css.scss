@@ -1,19 +1,36 @@
 #banner {
-  background-image: url(../images/tour_eiffel2.jpg);
+  background-image: url(../images/pagedegarde.png);
   background-size: cover;
-  height: 750px;
+  height: 950px;
   padding: 250px 30px;
-  margin-top: -20px;
+  margin-top: -60px;
  }
 
 #banner h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   font-size: 50px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 25px;
+}
+#banner h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-size: 30px;
   font-weight: 400;
   color: white;
 }
 
 #banner p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   font-size : 25px;
   font-weight: 100;
   color: white;
+  text-shadow: 0 2px 0 rgb(8, 8, 8);
 }
+#mce-EMAIL {
+  margin-right: 16px;
+}
+#align {
+  text-align: justify;
+}
+

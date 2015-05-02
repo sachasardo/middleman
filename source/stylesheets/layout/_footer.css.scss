@@ -1,9 +1,10 @@
-// Your footer style
 #footer {
   background-color: black;
   color: white;
+  padding: 30px;
 }
 
-#footer i {
+#footer i, a {
   font-size: 25px;
+  padding: 10px;
 }
