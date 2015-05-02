@@ -8906,14 +8906,16 @@ button.close {
  * Before writing in this file, look if there is not
  * already a Bootstrap SCSS variable that does the same job
  * ------------------------------------- */
-/* line 2, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_footer.css.scss */
+/* line 1, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_footer.css.scss */
 #footer {
   background-color: black;
-  color: white; }
+  color: white;
+  padding: 30px; }
 
 /* line 7, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_footer.css.scss */
-#footer i {
-  font-size: 25px; }
+#footer i, a {
+  font-size: 25px;
+  padding: 10px; }
 
 /* -------------------------------------
  * Colors & Fonts
@@ -9035,55 +9037,143 @@ button.close {
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
-/* line 10, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+/* line 7, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.padded {
+  padding-top: 8em;
+  padding-bottom: 8em; }
+
+/* line 11, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.bg-red {
+  background: #EE5F5B;
+  color: white; }
+
+/* line 15, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.bg-blue {
+  background: #469AE0;
+  color: white; }
+
+/* line 19, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.bg-yellow {
+  background: #FDB631;
+  color: white; }
+
+/* line 23, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.bg-orange {
+  background: #E67E22;
+  color: white; }
+
+/* line 27, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.bg-green {
+  background: #32B796;
+  color: white; }
+
+/* line 31, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.bg-purple {
+  background: #6452BD;
+  color: white; }
+
+/* line 38, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   color: #141414;
   margin-top: 0; }
 
-/* line 16, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+/* line 44, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
 .bg-blue {
-  background-color: #22A7F0;
+  background-color: #2871B0;
   color: white;
   font-weight: 300; }
 
-/* line 22, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
-.text-padded {
-  padding-top: 6em;
-  padding-bottom: 6em; }
+/* line 49, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.bg-grey {
+  background-color: grey; }
 
-/* line 27, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+/* line 52, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.bg-orange {
+  background-color: orange; }
+
+/* line 56, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.text-padded {
+  padding-top: 2em;
+  padding-bottom: 3em; }
+
+/* line 61, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
 .bg-blue h2 {
   font-size: 20px; }
 
-/* line 31, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+/* line 65, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
 .bg-blue p {
   font-size: 14px; }
 
-/* line 35, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+/* line 69, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
 .img-circle {
   height: 200;
   width: 250; }
 
+/* line 73, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+#navbar {
+  background-color: transparent;
+  top: 0px;
+  bottom: 3px;
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  text-align: right; }
+
+/* line 82, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+#navbar li {
+  padding: 10px; }
+
+/* line 85, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+#chef {
+  padding: 30px; }
+
+/* line 91, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+.bg-blue strong {
+  color: orange; }
+
+/* line 94, /Users/sacha_sardo/code/middleman/source/stylesheets/layout/_utilities.css.scss */
+#center {
+  text-align: center; }
+
 /* line 1, /Users/sacha_sardo/code/middleman/source/stylesheets/pages/_home.css.scss */
 #banner {
-  background-image: url(../sources/images/tour_eiffel2.jpg);
+  background-image: url(../images/pagedegarde.png);
   background-size: cover;
-  height: 750px;
+  height: 950px;
   padding: 250px 30px;
-  margin-top: -20px; }
+  margin-top: -60px; }
 
 /* line 9, /Users/sacha_sardo/code/middleman/source/stylesheets/pages/_home.css.scss */
 #banner h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   font-size: 50px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 25px; }
+
+/* line 16, /Users/sacha_sardo/code/middleman/source/stylesheets/pages/_home.css.scss */
+#banner h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-size: 30px;
   font-weight: 400;
   color: white; }
 
-/* line 15, /Users/sacha_sardo/code/middleman/source/stylesheets/pages/_home.css.scss */
+/* line 23, /Users/sacha_sardo/code/middleman/source/stylesheets/pages/_home.css.scss */
 #banner p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   font-size: 25px;
   font-weight: 100;
-  color: white; }
+  color: white;
+  text-shadow: 0 2px 0 #080808; }
+
+/* line 30, /Users/sacha_sardo/code/middleman/source/stylesheets/pages/_home.css.scss */
+#mce-EMAIL {
+  margin-right: 16px; }
+
+/* line 33, /Users/sacha_sardo/code/middleman/source/stylesheets/pages/_home.css.scss */
+#align {
+  text-align: justify; }
 
 /*
 ==============================================
